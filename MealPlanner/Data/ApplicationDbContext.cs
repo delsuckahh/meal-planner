@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using MealPlanner.Models;
 
 namespace MealPlanner.Data
 {
@@ -12,5 +13,6 @@ namespace MealPlanner.Data
             : base(options)
         {
         }
+        public DbSet<MealPlanner.Models.Meal> Meal { get; set; }
     }
 }

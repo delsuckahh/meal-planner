@@ -5,11 +5,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MealPlanner.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MealPlanner.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
-    {
+    {             
         public IActionResult Index()
         {
             return View();
@@ -33,6 +35,12 @@ namespace MealPlanner.Controllers
         {
             return View();
         }
+
+        public IActionResult Meal()
+        {
+            return View();
+        }
+        
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
