@@ -1,0 +1,99 @@
+﻿@model MealPlanner.Models.Recipe
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Recipe</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PrepTime)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PrepTime)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CookTime)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CookTime)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Calories)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Calories)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NumServings)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NumServings)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Course)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Course)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cuisine)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cuisine)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Author)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Author)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Ingredients_Quantity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ingredients_Quantity)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Ingredients_Unit)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ingredients_Unit)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Ingredient)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ingredient)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalTime)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TotalTime)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

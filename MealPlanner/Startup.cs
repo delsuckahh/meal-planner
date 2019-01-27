@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using MealPlanner.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MealPlanner.Models;
 
 namespace MealPlanner
 {
@@ -41,6 +42,9 @@ namespace MealPlanner
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddDbContext<MealPlannerContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("MealPlannerContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
