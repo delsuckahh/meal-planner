@@ -66,7 +66,7 @@ using MealPlanner.Models;
             WriteLiteral("\r\n<h2>Index</h2>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(119, 37, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a29b7d60d7b04d608a10b4a1bdc6dec6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ebc98670cd7b4125b5a49db046974299", async() => {
                 BeginContext(142, 10, true);
                 WriteLiteral("Create New");
                 EndContext();
@@ -356,7 +356,7 @@ using MealPlanner.Models;
             WriteLiteral("\r\n            </td>\r\n            <td>\r\n                ");
             EndContext();
             BeginContext(2988, 53, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ef8a76217864b80b1c0072ebbbb0cc0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "18d3b95ee197451a929a3236cdf77d38", async() => {
                 BeginContext(3033, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -391,7 +391,7 @@ using MealPlanner.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(3061, 59, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5599f3549ad24142a292b146d7fca41e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9a4b3216b388456b879fb3f18148fff1", async() => {
                 BeginContext(3109, 7, true);
                 WriteLiteral("Details");
                 EndContext();
@@ -426,7 +426,7 @@ using MealPlanner.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(3140, 57, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "456b020fedc243f892e16b784706d47c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7475af3fb0934a1a919bf7b836b4283e", async() => {
                 BeginContext(3187, 6, true);
                 WriteLiteral("Delete");
                 EndContext();
