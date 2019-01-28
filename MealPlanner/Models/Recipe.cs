@@ -19,9 +19,27 @@ namespace MealPlanner.Models
         public string Cuisine { get; set; }
         public string Author  { get; set; }
 
-        public int    Ingredients_Quantity { get; set; }
-        public string Ingredients_Unit     { get; set; }
-        public string Ingredient           { get; set; }
+        private int    Ingredients_Quantity { get; set; }
+        private string Ingredients_Unit     { get; set; }
+        private string Ingredient_Item      { get; set; }
+
+        private List<string> _ingredient = new List<string>();
+
+        public List<string> Ingredient
+        {
+            get
+            {
+
+                return this._ingredient;
+            }
+
+            set
+            {
+                _ingredient.Add($"{Ingredients_Quantity.ToString()} {Ingredients_Unit} {Ingredient_Item}");
+            }
+        }
+
+        public List<string> Instructions { get; set; }
 
         public int Id { get; set; }
 
