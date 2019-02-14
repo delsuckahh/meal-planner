@@ -59,40 +59,10 @@
         <dd>
             @Html.DisplayFor(model => model.Cuisine)
         </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Author)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Author)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Ingredients_Quantity)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Ingredients_Quantity)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Ingredients_Unit)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Ingredients_Unit)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Ingredient)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Ingredient)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.TotalTime)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.TotalTime)
-        </dd>
     </dl>
     
     <form asp-action="Delete">
-        <input type="hidden" asp-for="Id" />
+        <input type="hidden" asp-for="ID" />
         <input type="submit" value="Delete" class="btn btn-default" /> |
         <a asp-action="Index">Back to List</a>
     </form>

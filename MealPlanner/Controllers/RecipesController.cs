@@ -5,15 +5,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using MealPlanner.Data;
 using MealPlanner.Models;
 
 namespace MealPlanner.Controllers
 {
     public class RecipesController : Controller
     {
-        private readonly MealPlannerContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public RecipesController(MealPlannerContext context)
+        public RecipesController(ApplicationDbContext context)
         {
             _context = context;
         }
@@ -33,7 +34,7 @@ namespace MealPlanner.Controllers
             }
 
             var recipe = await _context.Recipe
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.ID == id);
             if (recipe == null)
             {
                 return NotFound();
@@ -53,7 +54,7 @@ namespace MealPlanner.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Title,Description,PrepTime,CookTime,Calories,NumServings,Course,Cuisine,Author,Ingredients_Quantity,Ingredients_Unit,Ingredient,Id,TotalTime")] Recipe recipe)
+        public async Task<IActionResult> Create([Bind("ID,Title,Description,PrepTime,CookTime,Calories,NumServings,Course,Cuisine")] Recipe recipe)
         {
             if (ModelState.IsValid)
             {
@@ -85,9 +86,9 @@ namespace MealPlanner.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Title,Description,PrepTime,CookTime,Calories,NumServings,Course,Cuisine,Author,Ingredients_Quantity,Ingredients_Unit,Ingredient,Id,TotalTime")] Recipe recipe)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,Title,Description,PrepTime,CookTime,Calories,NumServings,Course,Cuisine")] Recipe recipe)
         {
-            if (id != recipe.Id)
+            if (id != recipe.ID)
             {
                 return NotFound();
             }
@@ -101,7 +102,7 @@ namespace MealPlanner.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!RecipeExists(recipe.Id))
+                    if (!RecipeExists(recipe.ID))
                     {
                         return NotFound();
                     }
@@ -124,7 +125,7 @@ namespace MealPlanner.Controllers
             }
 
             var recipe = await _context.Recipe
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.ID == id);
             if (recipe == null)
             {
                 return NotFound();
@@ -146,7 +147,7 @@ namespace MealPlanner.Controllers
 
         private bool RecipeExists(int id)
         {
-            return _context.Recipe.Any(e => e.Id == id);
+            return _context.Recipe.Any(e => e.ID == id);
         }
     }
 }

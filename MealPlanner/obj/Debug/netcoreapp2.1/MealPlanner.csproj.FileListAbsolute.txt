@@ -34,16 +34,6 @@ C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1
 C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\MealPlanner.pdb
 C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\MealPlanner.csproj.CopyComplete
 C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\Razor\Views\Home\Meal.g.cshtml.cs
-C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\Razor\Views\Meals\Create.g.cshtml.cs
-C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\Razor\Views\Meals\Delete.g.cshtml.cs
-C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\Razor\Views\Meals\Details.g.cshtml.cs
-C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\Razor\Views\Meals\Edit.g.cshtml.cs
-C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\Razor\Views\Meals\Index.g.cshtml.cs
-C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\Razor\Views\Recipes\Create.g.cshtml.cs
-C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\Razor\Views\Recipes\Delete.g.cshtml.cs
-C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\Razor\Views\Recipes\Details.g.cshtml.cs
-C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\Razor\Views\Recipes\Edit.g.cshtml.cs
-C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\Razor\Views\Recipes\Index.g.cshtml.cs
 C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\AccessDenied.g.cshtml.cs
 C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ConfirmEmail.g.cshtml.cs
 C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ExternalLogin.g.cshtml.cs
@@ -77,3 +67,8 @@ C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1
 C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Error.g.cshtml.cs
 C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
 C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
+C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\Razor\Views\Recipes\Create.g.cshtml.cs
+C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\Razor\Views\Recipes\Delete.g.cshtml.cs
+C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\Razor\Views\Recipes\Details.g.cshtml.cs
+C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\Razor\Views\Recipes\Edit.g.cshtml.cs
+C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\Razor\Views\Recipes\Index.g.cshtml.cs

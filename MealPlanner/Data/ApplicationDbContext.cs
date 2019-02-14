@@ -13,6 +13,9 @@ namespace MealPlanner.Data
             : base(options)
         {
         }
-        public DbSet<MealPlanner.Models.Meal> Meal { get; set; }
+        
+        public DbSet<MealPlanner.Models.Recipe> Recipe { get; set; }        
+        public DbSet<MealPlanner.Models.Instruction> Instruction { get; set; }
+        public DbSet<MealPlanner.Models.Ingredient> Ingredient { get; set; } 
     }
 }
