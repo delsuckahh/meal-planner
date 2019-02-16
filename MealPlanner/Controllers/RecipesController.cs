@@ -7,24 +7,28 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MealPlanner.Data;
 using MealPlanner.Models;
+using MealPlanner.DAL;
 
 namespace MealPlanner.Controllers
 {
     public class RecipesController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        //private readonly ApplicationDbContext _context;
+        private RecipeContext db = new RecipeContext();
 
-        public RecipesController(ApplicationDbContext context)
-        {
-            _context = context;
-        }
+        //public RecipesController(ApplicationDbContext context)
+        //{
+        //    _context = context;
+        //}
 
         // GET: Recipes
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Recipe.ToListAsync());
+            //return View(await _context.Recipe.ToListAsync());
+            return View(await db.Recipes.ToListAsync());
         }
 
+        /*
         // GET: Recipes/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -149,5 +153,7 @@ namespace MealPlanner.Controllers
         {
             return _context.Recipe.Any(e => e.ID == id);
         }
+
+    */
     }
 }

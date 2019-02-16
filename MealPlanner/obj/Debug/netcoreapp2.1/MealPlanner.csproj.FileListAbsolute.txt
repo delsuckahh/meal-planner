@@ -9,7 +9,6 @@ C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1
 C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\MealPlanner.csproj.CoreCompileInputs.cache
 C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\MealPlanner.RazorAssemblyInfo.cache
 C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\MealPlanner.RazorAssemblyInfo.cs
-C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\MealPlanner.AssemblyInfoInputs.cache
 C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\MealPlanner.AssemblyInfo.cs
 C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\MealPlanner.TagHelpers.input.cache
@@ -72,3 +71,4 @@ C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1
 C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\Razor\Views\Recipes\Details.g.cshtml.cs
 C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\Razor\Views\Recipes\Edit.g.cshtml.cs
 C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\Razor\Views\Recipes\Index.g.cshtml.cs
+C:\Users\delsuckahh\source\repos\MealPlanner\MealPlanner\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
