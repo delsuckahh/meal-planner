@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using MealPlanner.DAL;
 using MealPlanner.Models;
+using MealPlanner.ViewModels;
 
 namespace MealPlanner.Controllers
 {
@@ -24,16 +25,19 @@ namespace MealPlanner.Controllers
         // GET: Recipe/Details/5
         public ActionResult Details(int? id)
         {
+            var viewModel = new RecipeDetailData();
+
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Recipe recipe = db.Recipes.Find(id);
-            if (recipe == null)
+            //Recipe recipe = db.Recipes.Find(id);
+            viewModel.Recipes = db.Recipes;
+            if (viewModel.Recipes == null)
             {
                 return HttpNotFound();
             }
-            return View(recipe);
+            return View(viewModel);
         }
 
         // GET: Recipe/Create
