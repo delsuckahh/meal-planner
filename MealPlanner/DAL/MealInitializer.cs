@@ -18,6 +18,20 @@ namespace MealPlanner.DAL
             };
             recipes.ForEach(s => context.Recipes.Add(s));
             context.SaveChanges();
+
+            var ingredients = new List<Ingredient>();
+            var instructions = new List<Instruction>();
+            foreach(Recipe item in recipes)
+            {
+                ingredients.Add(new Ingredient { RecipeID = item.ID, Item = "Ingredient 1", });
+                ingredients.Add(new Ingredient { RecipeID = item.ID, Item = "Ingredient 2", });
+                instructions.Add(new Instruction { RecipeID = item.ID, StepNum = 1, Description = "Instruction 1", });
+                instructions.Add(new Instruction { RecipeID = item.ID, StepNum = 2, Description = "Instruction 2", });
+            }
+            ingredients.ForEach(s => context.Ingredients.Add(s));
+            instructions.ForEach(s => context.Instructions.Add(s));
+            context.SaveChanges();
+
         }
     }
 }

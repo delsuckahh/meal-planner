@@ -31,6 +31,17 @@
               @Html.ActionLink("Back to List", "Index")
           </td>
       </tr>
+      foreach(var ingredient in Model.Ingredients)
+      {
+          if (ingredient.RecipeID == item.ID)
+          {
+              <tr class=" = @selectedRow">
+                  <td>
+                      @Html.DisplayFor(modelItem => ingredient.Item)
+                  </td>                  
+              </tr>
+          }
+      }
     }
 </table>
 
